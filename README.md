@@ -19,3 +19,19 @@ With features like smart search, notifications and admin verification, it ensure
 - 📱 **Responsive Design** – Works on mobile & desktop  
 
 ---
+
+## 🚀 Future Scope / Roadmap
+- AI-powered image recognition for auto-detecting lost items from images  
+- Blockchain-based verification system for secure item ownership  
+- Multi-language support for wider accessibility  
+- Mobile App (React Native) for Android & iOS  
+- Integration with university ERP systems for student verification  
+- Push notifications for instant updates  
+
+---
+
+## ⚡ Installation & Setup
+1. Clone the repository  
+   ```bash
+   git clone https://github.com/username/ReClaim.git
+   cd ReClaim
