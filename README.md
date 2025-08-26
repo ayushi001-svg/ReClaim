@@ -33,5 +33,5 @@ With features like smart search, notifications and admin verification, it ensure
 ## ⚡ Installation & Setup
 1. Clone the repository  
    ```bash
-   git clone https://github.com/username/ReClaim.git
+   git clone https://github.com/Bhumika-78/ReClaim.git
    cd ReClaim
