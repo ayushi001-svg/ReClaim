@@ -25,6 +25,7 @@
                     />
                 </div>
             </div>
+            
         </div>
     </header>
 
@@ -60,15 +61,23 @@
                             <option value="Science Building">Science Building</option>
                         </select>
                     </div>
-                </div>   
+                </div>  
+                 <div class="flex items-end gap-2">
+                    <div class="text-sm text-[#9CA3AF]" id="results-count">
+                        6 items found
+                    </div>
+                    <button id="reset-filters" class="px-4 py-2 border rounded-lg text-sm font-medium hover:bg-gray-50 focus:outline-none focus:ring-2 border-[#E5E7EB] text-[#1F2937]">
+                        Reset filters
+                    </button>
+                </div> 
             </div>
         </div>
 
 
     
-
+    <!-- cards -->
      <div id="items-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-8">
-            <!-- Static items -->
+            
             <div class="bg-white border border-[#E5E7EB] rounded-xl shadow hover:shadow-lg transition-all duration-300 hover:-translate-y-1 group">
                 <div class="aspect-video overflow-hidden rounded-t-xl">
                     <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&h=300&fit=crop" alt="Black Leather Wallet" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
@@ -277,6 +286,9 @@
       
     </main>
 
+   
+    
+
     <footer class="bg-white border-t mt-16 border-[#E5E7EB]">
         <div class="container mx-auto px-4 py-8">
             <div class="text-center">
@@ -289,6 +301,22 @@
             </div>
         </div>git 
     </footer>
+
+     <!-- Empty State -->
+        <div id="empty-state" class="text-center py-16 hidden">
+            <div class="mx-auto w-64 h-64 mb-6 bg-gray-100 rounded-lg flex items-center justify-center">
+                <i data-lucide="search-x" class="h-16 w-16 text-[#9CA3AF]"></i>
+            </div>
+            <h3 class="text-2xl font-semibold mb-2 text-[#1F2937]">No items found</h3>
+            <p class="mb-6 max-w-md mx-auto text-[#9CA3AF]">
+                We couldn't find any items matching your search criteria. Try adjusting your filters or search terms.
+            </p>
+            <button class="px-4 py-2 border rounded-lg font-medium hover:bg-gray-50 border-[#E5E7EB] text-[#1F2937]">
+                Reset filters
+            </button>
+        </div>
+     
+    </div>
 
 </body>
 </html>
