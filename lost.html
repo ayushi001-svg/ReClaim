@@ -6,38 +6,60 @@
   <title>Found Page</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 min-h-screen flex flex-col items-center p-6">
-  
-  <!-- Page Title -->
-  <h1 class="text-3xl font-bold mb-6">Found Items</h1>
-  
-  <!-- Container -->
-  <div class="w-full max-w-4xl bg-white shadow-lg rounded-lg p-6">
-    
-    <!-- Search Bar -->
-    <input 
-      type="text" 
-      placeholder="Search items..." 
-      class="w-full border border-gray-300 rounded-lg px-4 py-2 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
-    />
-    
-    <!-- Filter Bar -->
-    <select class="w-full border border-gray-300 rounded-lg px-4 py-2 mb-6">
-      <option>All Categories</option>
-      <option>Electronics</option>
-      <option>Clothes</option>
-      <option>Books</option>
-    </select>
-    
-    <!-- Demo Card -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-      <div class="bg-gray-50 shadow-md rounded-xl p-4">
-        <h2 class="font-semibold text-lg">Black Wallet</h2>
-        <p class="text-gray-600">Found near Library</p>
-        <button class="mt-3 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">Claim</button>
-      </div>
+<body class="bg-gray-100 min-h-screen flex flex-col">
+
+  <!-- 🌐 Navbar -->
+  <nav class="bg-blue-600 text-white p-4 shadow-md">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+      <h1 class="text-xl font-bold">Reclaim</h1>
+      <ul class="flex space-x-6">
+        <li><a href="index.html" class="hover:underline">Home</a></li>
+        <li><a href="lost.html" class="hover:underline">Lost</a></li>
+        <li><a href="found.html" class="hover:underline">Found</a></li>
+      </ul>
     </div>
+  </nav>
+
+  <!-- 📌 Main Content -->
+  <main class="flex-grow flex flex-col items-center p-6">
+    <!-- Page Title -->
+    <h1 class="text-3xl font-bold mb-6">Found Items</h1>
     
-  </div>
+    <!-- Container -->
+    <div class="w-full max-w-4xl bg-white shadow-lg rounded-lg p-6">
+      
+      <!-- Search Bar -->
+      <input 
+        type="text" 
+        placeholder="Search items..." 
+        class="w-full border border-gray-300 rounded-lg px-4 py-2 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
+      />
+      
+      <!-- Filter Bar -->
+      <select class="w-full border border-gray-300 rounded-lg px-4 py-2 mb-6">
+        <option>All Categories</option>
+        <option>Electronics</option>
+        <option>Clothes</option>
+        <option>Books</option>
+      </select>
+      
+      <!-- Demo Card -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="bg-gray-50 shadow-md rounded-xl p-4">
+          <h2 class="font-semibold text-lg">Black Wallet</h2>
+          <p class="text-gray-600">Found near Library</p>
+          <button class="mt-3 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">Claim</button>
+        </div>
+      </div>
+      
+    </div>
+  </main>
+
+  <!-- ⚡ Footer -->
+  <footer class="bg-blue-600 text-white text-center p-4 mt-6">
+    <p>&copy; 2025 Reclaim - Smart Lost & Found System</p>
+  </footer>
+
 </body>
 </html>
+
