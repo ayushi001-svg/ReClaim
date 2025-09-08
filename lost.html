@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lost Page</title>
+  <title>Report Lost Item</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     :root {
@@ -13,64 +13,51 @@
     }
   </style>
 </head>
-<body class="bg-[var(--cream)] min-h-screen flex flex-col">
+<body class="bg-[var(--cream)] min-h-screen flex items-center justify-center">
 
-  <!-- Navbar -->
-  <nav class="bg-[var(--dark)] text-white p-4 shadow-md">
-    <div class="max-w-6xl mx-auto flex justify-between items-center">
-      <h1 class="text-xl font-bold text-[var(--orange)]">Reclaim</h1>
-      <ul class="flex space-x-6">
-        <li><a href="index.html" class="hover:text-[var(--orange)]">Home</a></li>
-        <li><a href="lost.html" class="hover:text-[var(--orange)]">Lost</a></li>
-        <li><a href="found.html" class="hover:text-[var(--orange)]">Found</a></li>
-      </ul>
-    </div>
-  </nav>
+  <!-- Form Card -->
+  <div class="bg-white shadow-lg rounded-2xl p-8 w-full max-w-md border border-[var(--dark)]">
+    <h1 class="text-2xl font-bold text-center text-[var(--dark)] mb-6">Report Lost Item</h1>
 
-  <!-- Main Content -->
-  <main class="flex-grow flex flex-col items-center p-6">
-    <!-- Page Title -->
-    <h1 class="text-3xl font-bold mb-6 text-[var(--dark)]">Lost Items</h1>
-    
-    <!-- Container -->
-    <div class="w-full max-w-4xl bg-white shadow-lg rounded-lg p-6">
-      
-      <!-- Search Bar -->
-      <input 
-        type="text" 
-        placeholder="Search lost items..." 
-        class="w-full border border-gray-300 rounded-lg px-4 py-2 mb-4 focus:outline-none focus:ring-2 focus:ring-[var(--orange)]"
-      />
-      
-      <!-- Filter Bar -->
-      <select class="w-full border border-gray-300 rounded-lg px-4 py-2 mb-6 focus:outline-none focus:ring-2 focus:ring-[var(--orange)]">
-        <option>All Categories</option>
-        <option>Electronics</option>
-        <option>Clothes</option>
-        <option>Books</option>
-        <option>Accessories</option>
-      </select>
-      
-      <!-- Demo Card -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        <div class="bg-[var(--cream)] shadow-md rounded-xl p-4 border border-[var(--dark)]">
-          <h2 class="font-semibold text-lg text-[var(--dark)]">Lost Backpack</h2>
-          <p class="text-gray-700">Lost near Engineering Building</p>
-          <button class="mt-3 bg-[var(--orange)] text-white px-4 py-2 rounded-lg hover:bg-orange-600">
-            Report Found
-          </button>
-        </div>
-      </div>
-      
-    </div>
-  </main>
+    <form class="space-y-4">
+      <!-- Item Name -->
+      <input type="text" placeholder="Item Name" 
+        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-[var(--orange)] focus:outline-none">
 
-  <!-- Footer -->
-  <footer class="bg-[var(--dark)] text-white text-center p-4 mt-6">
-    <p>&copy; 2025 Reclaim - Smart Lost & Found System</p>
-  </footer>
+      <!-- Description -->
+      <textarea placeholder="Description" rows="3"
+        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-[var(--orange)] focus:outline-none"></textarea>
+
+      <!-- Location -->
+      <input type="text" placeholder="Location" 
+        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-[var(--orange)] focus:outline-none">
+
+      <!-- Photo -->
+      <input type="file" 
+        class="w-full border border-gray-300 rounded-lg px-4 py-2 bg-gray-50">
+
+      <!-- Name -->
+      <input type="text" placeholder="Name" 
+        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-[var(--orange)] focus:outline-none">
+
+      <!-- Email -->
+      <input type="email" placeholder="Email Address" 
+        class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-[var(--orange)] focus:outline-none">
+
+      <!-- Submit Button -->
+      <button type="submit"
+        class="w-full bg-[var(--orange)] text-white font-semibold py-2 rounded-lg hover:bg-orange-600 transition">
+        Submit Report
+      </button>
+    </form>
+
+    <!-- View All Link -->
+    <p class="text-center mt-4">
+      <a href="lost.html" class="text-[var(--dark)] hover:text-[var(--orange)] underline">
+        View All Reported Items
+      </a>
+    </p>
+  </div>
 
 </body>
 </html>
-
-
