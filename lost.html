@@ -3,19 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Found Page</title>
+  <title>Lost Page</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --dark: #36454F;
+      --orange: #FB8B24;
+      --cream: #FAF0E6;
+    }
+  </style>
 </head>
-<body class="bg-gray-100 min-h-screen flex flex-col">
+<body class="bg-[var(--cream)] min-h-screen flex flex-col">
 
   <!-- 🌐 Navbar -->
-  <nav class="bg-blue-600 text-white p-4 shadow-md">
+  <nav class="bg-[var(--dark)] text-white p-4 shadow-md">
     <div class="max-w-6xl mx-auto flex justify-between items-center">
-      <h1 class="text-xl font-bold">Reclaim</h1>
+      <h1 class="text-xl font-bold text-[var(--orange)]">Reclaim</h1>
       <ul class="flex space-x-6">
-        <li><a href="index.html" class="hover:underline">Home</a></li>
-        <li><a href="lost.html" class="hover:underline">Lost</a></li>
-        <li><a href="found.html" class="hover:underline">Found</a></li>
+        <li><a href="index.html" class="hover:text-[var(--orange)]">Home</a></li>
+        <li><a href="lost.html" class="hover:text-[var(--orange)]">Lost</a></li>
+        <li><a href="found.html" class="hover:text-[var(--orange)]">Found</a></li>
       </ul>
     </div>
   </nav>
@@ -23,7 +30,7 @@
   <!-- 📌 Main Content -->
   <main class="flex-grow flex flex-col items-center p-6">
     <!-- Page Title -->
-    <h1 class="text-3xl font-bold mb-6">Found Items</h1>
+    <h1 class="text-3xl font-bold mb-6 text-[var(--dark)]">Lost Items</h1>
     
     <!-- Container -->
     <div class="w-full max-w-4xl bg-white shadow-lg rounded-lg p-6">
@@ -31,57 +38,37 @@
       <!-- Search Bar -->
       <input 
         type="text" 
-        placeholder="Search items..." 
-        class="w-full border border-gray-300 rounded-lg px-4 py-2 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        placeholder="Search lost items..." 
+        class="w-full border border-gray-300 rounded-lg px-4 py-2 mb-4 focus:outline-none focus:ring-2 focus:ring-[var(--orange)]"
       />
       
       <!-- Filter Bar -->
-      <select class="w-full border border-gray-300 rounded-lg px-4 py-2 mb-6">
+      <select class="w-full border border-gray-300 rounded-lg px-4 py-2 mb-6 focus:outline-none focus:ring-2 focus:ring-[var(--orange)]">
         <option>All Categories</option>
         <option>Electronics</option>
         <option>Clothes</option>
         <option>Books</option>
+        <option>Accessories</option>
       </select>
       
- <!-- Demo Cards -->
+      <!-- Demo Card -->
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        
-        <!-- Card 1 -->
-        <div class="bg-gray-50 shadow-md rounded-xl p-4">
-          <img src="https://via.placeholder.com/150" alt="Item" class="w-full h-32 object-cover rounded-md mb-3">
-          <h2 class="font-semibold text-lg">Black Wallet</h2>
-          <p class="text-gray-600">Found near Library</p>
-          <button class="mt-3 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">Claim</button>
+        <div class="bg-[var(--cream)] shadow-md rounded-xl p-4 border border-[var(--dark)]">
+          <h2 class="font-semibold text-lg text-[var(--dark)]">Lost Backpack</h2>
+          <p class="text-gray-700">Lost near Engineering Building</p>
+          <button class="mt-3 bg-[var(--orange)] text-white px-4 py-2 rounded-lg hover:bg-orange-600">
+            Report Found
+          </button>
         </div>
-
-        <!-- Card 2 -->
-        <div class="bg-gray-50 shadow-md rounded-xl p-4">
-          <img src="https://via.placeholder.com/150" alt="Item" class="w-full h-32 object-cover rounded-md mb-3">
-          <h2 class="font-semibold text-lg">Blue Backpack</h2>
-          <p class="text-gray-600">Found in Cafeteria</p>
-          <button class="mt-3 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">Claim</button>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="bg-gray-50 shadow-md rounded-xl p-4">
-          <img src="https://via.placeholder.com/150" alt="Item" class="w-full h-32 object-cover rounded-md mb-3">
-          <h2 class="font-semibold text-lg">Physics Textbook</h2>
-          <p class="text-gray-600">Found in Lecture Hall A</p>
-          <button class="mt-3 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">Claim</button>
-        </div>
-
       </div>
       
     </div>
   </main>
 
-
   <!-- ⚡ Footer -->
-  <footer class="bg-blue-600 text-white text-center p-4 mt-6">
+  <footer class="bg-[var(--dark)] text-white text-center p-4 mt-6">
     <p>&copy; 2025 Reclaim - Smart Lost & Found System</p>
   </footer>
 
 </body>
 </html>
-
-
