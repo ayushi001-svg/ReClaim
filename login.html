@@ -1,74 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<<<<<<< HEAD
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        .custom-brown { background-color: #714329; }
-        .custom-light-brown { background-color: #B5A192; }
-        .custom-beige { background-color: #D0B9A7; }
-    </style>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
-<body class="bg-[#D0B9A7] min-h-screen flex items-center justify-center">
-    <div class="bg-white p-8 rounded-lg shadow-lg w-96">
-        <h2 class="text-2xl font-bold text-[#714329] mb-6 text-center">Login</h2>
-        <form>
-            <div class="mb-4">
-                <label class="block text-[#714329] text-sm mb-2">Email</label>
-                <input type="email" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-[#B5A192]">
+<body class="bg-gradient-to-br from-[#D0B9A7] to-[#B5A192] min-h-screen flex items-center justify-center p-4">
+    <div class="bg-white/90 backdrop-blur-sm p-8 rounded-xl shadow-2xl w-[400px]">
+        <div class="text-center mb-8">
+            <i class="fas fa-user-circle text-[#714329] text-5xl mb-4"></i>
+            <h2 class="text-3xl font-bold text-[#714329]">Welcome Back</h2>
+            <p class="text-[#B5A192]">Login to your account</p>
+        </div>
+
+        <form class="space-y-6">
+            <div class="relative">
+                <i class="fas fa-envelope absolute left-3 top-1/2 transform -translate-y-1/2 text-[#714329]"></i>
+                <input type="email" placeholder="Email" 
+                    class="w-full pl-10 pr-4 py-3 border-2 rounded-lg focus:outline-none focus:border-[#714329] bg-white/50">
             </div>
-            <div class="mb-6">
-                <label class="block text-[#714329] text-sm mb-2">Password</label>
-                <input type="password" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:border-[#B5A192]">
+            
+            <div class="relative">
+                <i class="fas fa-lock absolute left-3 top-1/2 transform -translate-y-1/2 text-[#714329]"></i>
+                <input type="password" placeholder="Password" 
+                    class="w-full pl-10 pr-4 py-3 border-2 rounded-lg focus:outline-none focus:border-[#714329] bg-white/50">
             </div>
-            <button type="submit" class="w-full bg-[#714329] text-white py-2 rounded-lg hover:bg-[#B5A192] transition-colors">
+
+            <div class="flex justify-between items-center">
+                <label class="flex items-center text-sm text-[#714329]">
+                    <input type="checkbox" class="mr-2 accent-[#714329]">
+                    Remember me
+                  </label>
+                <a href="#" class="text-sm text-[#714329] hover:text-[#B5A192]">Forgot Password?</a>
+            </div>
+
+            <button type="submit" 
+                class="w-full bg-[#714329] text-white py-3 rounded-lg hover:bg-[#B5A192] transition-all duration-300">
                 Login
             </button>
+                <div class="text-center">
+                <p class="text-[#714329]">
+                    Don't have an account? 
+                    <a href="signup.html" class="font-bold hover:text-[#B5A192]">Sign Up</a>
+                </p>
+            </div>
         </form>
+
+        <div class="mt-6">
+            <div class="relative flex items-center my-6">
+                <div class="flex-grow border-t border-[#B5A192]"></div>
+                <span class="mx-4 text-[#714329]">Or continue with</span>
+                <div class="flex-grow border-t border-[#B5A192]"></div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-4">
+                <button class="flex items-center justify-center gap-2 py-2.5 border-2 border-[#714329] text-[#714329] rounded-lg hover:bg-[#714329] hover:text-white transition-colors">
+                    <i class="fab fa-google"></i>
+                    Google
+                </button>
+                <button class="flex items-center justify-center gap-2 py-2.5 border-2 border-[#714329] text-[#714329] rounded-lg hover:bg-[#714329] hover:text-white transition-colors">
+                    <i class="fab fa-facebook"></i>
+                    Facebook
+                </button>
+            </div>
+        </div>
     </div>
-=======
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    :root {
-      --dark-slate: #36454F;
-      --bright-orange: #FB8B24;
-      --white: #FFFFFF;
-    }
-  </style>
-</head>
-<body class="min-h-screen flex items-center justify-center bg-[var(--white)] font-sans">
-
-  <!-- Login Card -->
-  <div class="bg-[var(--white)] rounded-2xl shadow-xl w-full max-w-md p-8">
-    <h2 class="text-2xl font-bold text-center text-[var(--dark-slate)] mb-6">Login</h2>
-    
-    <form class="space-y-4">
-      <div>
-        <label class="block text-sm text-[var(--dark-slate)]">Email</label>
-        <input type="email" placeholder="Enter your email"
-          class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[var(--bright-orange)]">
-      </div>
-      <div>
-        <label class="block text-sm text-[var(--dark-slate)]">Password</label>
-        <input type="password" placeholder="Enter your password"
-          class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[var(--bright-orange)]">
-      </div>
-      <button type="submit"
-        class="w-full py-2 rounded-lg bg-[var(--bright-orange)] text-white font-semibold hover:bg-orange-600 transition">Login</button>
-    </form>
-
-    <p class="text-center text-sm text-gray-600 mt-6">
-      Don’t have an account? 
-      <a href="signup.html" class="text-[var(--bright-orange)] font-semibold hover:underline">Sign Up</a>
-    </p>
-  </div>
-
->>>>>>> 3cbd0013987ebd72c3f130515e35822b09bce250
-</body>
-</html>
